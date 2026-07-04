@@ -33,3 +33,6 @@ jobs:
     - name: Wykonanie automatycznych testów modułu finansowo-księgowego (Unittest)
       run: |
         python testy_finansowe.py
+
+    env:
+      GITHUB_TOKEN: "test"
