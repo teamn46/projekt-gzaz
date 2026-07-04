@@ -1,0 +1,63 @@
+import os
+
+
+def wygeneruj_plik_infografiki():
+    plakat = """==================================================================================
+||                                                                              ||
+||    WNIOSKI Z MODELOWANIA MATEMATYCZNEGO I STATYSTYCZNEGO - RAZEM BUDUJEMY GZAZ!||
+||                                                                              ||
+==================================================================================
+||                                                                              ||
+||  [ SEKCJA 1: NIEZAWODNOŚĆ ]                                                  ||
+||  DBAJMY O NASZE MASZYNY - UNIKAJMY PRZESTOJÓW!                               ||
+||                                                                              ||
+||  +------------------------------------------------------------------------+  ||
+||  |                                                                        |  ||
+||  |   ŚREDNI CZAS MIĘDZY AWARIAMI (MTBF):                                   |  ||
+||  |   👉👉👉   266.00 GODZIN   👈👈👈                                      |  ||
+||  |                                                                        |  ||
+||  +------------------------------------------------------------------------+  ||
+||                                                                              ||
+||  WSKAZÓWKI OPERACYJNE DLA ZESPOŁU:                                           ||
+||  * Smaruj noże niszczarki regularnie zgodnie z procedurą stanwiskową.        ||
+||  * Nie przeładowuj podajnika papieru nadmierną ilością arkuszy naraz.        ||
+||  * PAMIĘTAJ: Dłuższa, bezawaryjna praca maszyny to wyższa wydajność!        ||
+||                                                                              ||
+==================================================================================
+||                                                                              ||
+||  [ SEKCJA 2: EKONOMIA ]                                                      ||
+||  NASZ WSPÓLNY CEL RENTOWNOŚCI (BEP)                                          ||
+||                                                                              ||
+||  Koszty stałe utrzymania GZAZ:  12 000,00 PLN / miesiąc                     ||
+||  Marża na czyszczeniu papieru:       3,00 PLN / kg                           ||
+||                                                                              ||
+||  +------------------------------------------------------------------------+  ||
+||  |                                                                        |  ||
+||  |   MINIMALNA MASA UTYLIZACJI DLA ZESPOŁU:                               |  ||
+||  |   👉👉👉   4000 KG (4 TONY) MIESIĘCZNIE   👈👈👈                        |  ||
+||  |                                                                        |  ||
+||  +------------------------------------------------------------------------+  ||
+||                                                                              ||
+||  DLACZEGO TO JEST WAŻNE DLA KAŻDEGO Z NAS?                                    ||
+||  * 4000 kg to punkt, w którym zakład pokrywa wszystkie koszty operacyjne.    ||
+||  * Każdy kilogram przetworzony POWYŻEJ tej kreski generuje czysty zysk.      ||
+||  * Wypracowany zysk wraca do zespołu w postaci modernizacji stanowisk!        ||
+||                                                                              ||
+==================================================================================
+||  #BadaniaOperacyjne #Statystyka #OptymalizacjaKadr #GZAZteam                  ||
+||  Opracowano w ramach praktyk studenckich - GZAZ Gliwice, Lipiec 2026 r.       ||
+==================================================================================
+"""
+
+    nazwa_pliku = "infografika_edukacyjna.txt"
+    with open(nazwa_pliku, "w", encoding="utf-8") as f:
+        f.write(plakat)
+
+    print("\n" + "=" * 70)
+    print(f"[SUKCES] Wygenerowano plik plakatu edukacyjnego!")
+    print(f"Lokalizacja pliku: {os.path.abspath(nazwa_pliku)}")
+    print("=" * 70)
+
+
+if __name__ == "__main__":
+    wygeneruj_plik_infografiki()
